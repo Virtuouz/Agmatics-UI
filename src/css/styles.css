@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .basecontainer {
+    @apply flex max-w-[1440px] flex-col px-4 sm:px-10;
+  }
+  .cs-w-full-l {
+    @apply relative left-1/2 right-1/2 ml-[-50vw] mr-0 w-[50vw];
+  }
+  .cs-w-full-r {
+    @apply relative left-1/2 right-1/2 ml-0 mr-[-50vw] w-[50vw];
+  }
+  .componentcontainer {
+    @apply relative left-1/2 right-1/2 mx-[-50vw] flex w-screen flex-col items-center justify-center py-20;
+  }
+  .cs-w-full {
+    @apply relative left-1/2 right-1/2 mx-[-50vw] w-screen;
+  }
+  .link {
+    @apply underline decoration-4 underline-offset-4 transition-colors;
+  }
+}
+
+/* Globals */
+
+@font-face {
+  font-family: "fira-sansregular";
+  src:
+    url("/fonts/firasans-regular-webfont.woff2") format("woff2"),
+    url("/fonts/firasans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Debug css */
+/* * {
+  outline: 1px solid #f00 !important;
+}  */
+
+
+
+/* Utilities */
+.visually-hidden {
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%); /* browsers in the future */
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
