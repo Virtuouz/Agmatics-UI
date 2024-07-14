@@ -10,6 +10,40 @@
   <body
     class="mx-4 sm:mx-10 flex flex-col h-screen text-white bg-[radial-gradient(50%_50%_at_50%_50%,#120F0E_0%,#1F1A18_100%);] text-[1.0625rem]"
   >
+    <!-- Navigation -->
+    <div class="fixed left-0 top-0 z-[900] w-full">
+      <nav
+        class="transition-all duration-300 h-auto md:h-auto w-full bg-opacity-70 backdrop-blur-sm flex "
+      >
+        <div
+          class="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between p-4 md:gap-1 w-full"
+        >
+          <p class="font-bold opacity-90">AgMatics App</p>
+          <div class="flex gap-2.5">
+            <p class="opacity-85 font-bold">Cody Fisher</p>
+            <button class="opacity-70">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 12C5.10457 12 6 11.1046 6 10C6 8.89543 5.10457 8 4 8C2.89543 8 2 8.89543 2 10C2 11.1046 2.89543 12 4 12ZM10 12C11.1046 12 12 11.1046 12 10C12 8.89543 11.1046 8 10 8C8.89543 8 8 8.89543 8 10C8 11.1046 8.89543 12 10 12ZM18 10C18 11.1046 17.1046 12 16 12C14.8954 12 14 11.1046 14 10C14 8.89543 14.8954 8 16 8C17.1046 8 18 8.89543 18 10Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
     <main class="flex flex-1 flex-col">
       <!-- Topo -->
       <div class="absolute cs-w-full w-full h-full">
@@ -24,155 +58,231 @@
         >
           <div class="max-w-[720px] w-full flex flex-col h-full pb-10">
             <section
-              class="flex-1 h-full overflow-y-auto overflow-x-visible no-scrollbar  flex flex-col"
+              class="flex-1 h-full overflow-y-auto overflow-x-visible no-scrollbar flex flex-col"
             >
-              <div class="flex-1 flex flex-col justify-center items-center ">
-                
+              <div class="flex-1 flex flex-col justify-center items-center">
                 <div class="max-w-full w-full flex flex-col">
                   <!-- All chat messages go into this ul-->
-                  <ul class="w-full flex flex-col flow2-5 pt-10">
+                  <ul class="w-full flex flex-col flow2-5 pt-32">
+                    <!-- custom class to serve as a hook -->
                     <li
-                      class="lg-user-message  self-end max-w-[250px]  sm:max-w-[450px] "
+                      class="lg-user-message self-end max-w-[250px] sm:max-w-[450px] font-[firasans-regular]"
                     >
-                      <!-- custom class to serve as a hook -->
                       <div class="flex gap-4">
-                          <div>
-                              <div class="flex justify-between text-xs">
-                                <time datetime="2024-07-13T12:34:56" class="opacity-60">
-                                  12:34</time
-                                >
-                                <div class="flex gap-2">
-                                  <p class="opacity-60">Cody Fisher</p>
-                                  <img src="/src/assets/images/cody-fisher.png" alt="" class=" sm:hidden w-[25px] h-[25px]  ">
-                                </div>
-                              </div>
-                                    <p class="p-2 bg-agmatics-usertext rounded-lg mt-2">
-                                        is the make up of the soil in the reports? What is
-                                        the make up of the soil in the reports? What is the make
-                                        up of the soil in the reports? What is the make up of
-                                        the soil in the reports? What is the make up of the soil
-                                        in the reports? What is the make up of the soil in the
-                                        reports?
-                                    </p>
+                        <div>
+                          <div class="flex justify-between text-xs">
+                            <time
+                              datetime="2024-07-13T12:34:56"
+                              class="opacity-60"
+                            >
+                              12:34</time
+                            >
+                            <div class="flex gap-2">
+                              <p class="opacity-60">Cody Fisher</p>
+                              <img
+                                src="/src/assets/images/cody-fisher.png"
+                                alt=""
+                                class="sm:hidden w-[25px] h-[25px]"
+                              />
+                            </div>
                           </div>
-                          <img src="/src/assets/images/cody-fisher.png" alt="" class="hidden sm:block w-[55px] h-[55px] mt-[25px]  ">
+                          <p class="p-2 bg-agmatics-usertext rounded-lg mt-2">
+                            What is the make up of the soil in the reports?
+                          </p>
+                        </div>
+                        <img
+                          src="/src/assets/images/cody-fisher.png"
+                          alt=""
+                          class="hidden sm:block w-[55px] h-[55px] mt-[25px]"
+                        />
                       </div>
                     </li>
-                    <li class="lg-ai-message ">
-                      <ul class="flow ">
+                    <li class="lg-ai-message">
+                      <ul class="flow">
                         <li class="max-w-max">
                           <div class="flex gap-4">
-                            <img src="/src/assets/images/agronomist.png" alt="" class="hidden sm:block w-[55px] h-[55px] mt-[25px]  ">
-                              <div>
-                                  <div class="flex justify-between gap-4 text-xs">
-                                    <div class="flex gap-2">
-                                        <img src="/src/assets/images/agronomist.png" alt="" class=" sm:hidden w-[25px] h-[25px]  ">
-                                      <p class="cs-ai-name opacity-60">Agronomist</p>
-                                    </div>
-                                    <time
-                                      datetime="2024-07-13T12:34:56"
-                                      class="opacity-60"
-                                    >
-                                      12:34</time
-                                    >
-                                  </div>
-                                  <p class="p-2 bg-agmatics-aitext rounded-lg mt-2 ">
-                                    Harvesting the best information for you...
+                            <img
+                              src="/src/assets/images/agronomist.png"
+                              alt=""
+                              class="hidden sm:block w-[55px] h-[55px] mt-[25px]"
+                            />
+                            <div>
+                              <div
+                                class="flex justify-between gap-4 text-xs font-[inconsolata-semiexpanded]"
+                              >
+                                <div class="flex gap-2">
+                                  <img
+                                    src="/src/assets/images/agronomist.png"
+                                    alt=""
+                                    class="sm:hidden w-[25px] h-[25px]"
+                                  />
+                                  <p class="cs-ai-name opacity-60">
+                                    Agronomist
                                   </p>
-                                  <ol class="mt-5 pl-8 text-[11px] opacity-60 ">
-                                    <li class="">
-                                      <details
-                                        class="border-l-2 border-white border-opacity-30"
-                                      >
-                                        <summary
-                                          class="flex cursor-pointer gap-2 uppercase font-bold text-[10px]  pl-2.5 relative before:content-[''] before:w-1.5 before:h-1.5 before:absolute before:top-1 before:-left-1 before:bg-white before:rounded-full before:opacity-50"
-                                        >
-                                          <p>Current soil reports </p><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g opacity="0.4">
-                                            <path d="M2.40039 4.19999L6.00039 7.79999L9.60039 4.19999" stroke="white" stroke-width="2"/>
-                                            </g>
-                                            </svg>
-                                            
-                                        </summary>
-                                        <div class="pl-6 mt-3">
-                                            <p class="">
-                                              1,2,3,4,5,6,7,8,8,9,10,11,12,13,14,15,16,17...
-                                            </p>
-                                            <button class="mt-5 flex gap-1 ">
-                                                <p>Download data</p>
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g opacity="0.5">
-                                                    <path d="M3 9.75V10.5V12H12V9.75" stroke="white"/>
-                                                    <path d="M7.5 8.25V1.5" stroke="white"/>
-                                                    <path d="M4.5 5.25L7.5 8.25L10.5 5.25" stroke="white"/>
-                                                    </g>
-                                                    </svg>
-                                                    
-                                            </button>
-                                        </div>
-                                      </details>
-                                    </li>
-                                    <li class="first:pt-0">
-                                      <details
-                                        class="border-l-2 border-white border-opacity-30 pt-4"
-                                      >
-                                        <summary
-                                          class="flex cursor-pointer gap-2 uppercase font-bold text-[10px] list-none  pl-2.5 relative before:content-[''] before:w-1.5 before:h-1.5 before:absolute before:top-1 before:-left-1 before:bg-white before:rounded-full before:opacity-50"
-                                        >
-                                          <p>Get report soil texture</p>
-                                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g opacity="0.4">
-                                            <path d="M2.40039 4.19999L6.00039 7.79999L9.60039 4.19999" stroke="white" stroke-width="2"/>
-                                            </g>
-                                            </svg>
-                                        </summary>
-                                        <div class="pl-6 mt-3">
-                                            <p class="">
-                                              1,2,3,4,5,6,7,8,8,9,10,11,12,13,14,15,16,17...
-                                            </p>
-                                            <button class="mt-5 flex gap-1 ">
-                                                <p>Download data</p>
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g opacity="0.5">
-                                                    <path d="M3 9.75V10.5V12H12V9.75" stroke="white"/>
-                                                    <path d="M7.5 8.25V1.5" stroke="white"/>
-                                                    <path d="M4.5 5.25L7.5 8.25L10.5 5.25" stroke="white"/>
-                                                    </g>
-                                                    </svg>
-                                                    
-                                            </button>
-                                        </div>
-                                      </details>
-                                    </li>
-                                  </ol>
+                                </div>
+                                <time
+                                  datetime="2024-07-13T12:34:56"
+                                  class="opacity-60"
+                                >
+                                  12:34</time
+                                >
                               </div>
-                              
+                              <p class="p-2 bg-agmatics-aitext rounded-lg mt-2">
+                                Harvesting the best information for you...
+                              </p>
+                              <ol
+                                class="mt-5 pl-8 text-[11px] opacity-60 font-[inconsolata-semiexpanded]"
+                              >
+                                <li class="">
+                                  <details
+                                    class="border-l-2 border-white border-opacity-30"
+                                  >
+                                    <summary
+                                      class="flex cursor-pointer gap-2 uppercase font-[inconsolata-semiexpanded-bold] text-[10px] pl-2.5 relative before:content-[''] before:w-1.5 before:h-1.5 before:absolute before:top-1 before:-left-1 before:bg-white before:rounded-full before:opacity-50"
+                                    >
+                                      <p>Current soil reports</p>
+                                      <svg
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 12 12"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g opacity="0.4">
+                                          <path
+                                            d="M2.40039 4.19999L6.00039 7.79999L9.60039 4.19999"
+                                            stroke="white"
+                                            stroke-width="2"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </summary>
+                                    <div class="pl-6 mt-3">
+                                      <p class="">
+                                        1,2,3,4,5,6,7,8,8,9,10,11,12,13,14,15,16,17...
+                                      </p>
+                                      <button class="mt-5 flex gap-1">
+                                        <p>Download data</p>
+                                        <svg
+                                          width="15"
+                                          height="15"
+                                          viewBox="0 0 15 15"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <g opacity="0.5">
+                                            <path
+                                              d="M3 9.75V10.5V12H12V9.75"
+                                              stroke="white"
+                                            />
+                                            <path
+                                              d="M7.5 8.25V1.5"
+                                              stroke="white"
+                                            />
+                                            <path
+                                              d="M4.5 5.25L7.5 8.25L10.5 5.25"
+                                              stroke="white"
+                                            />
+                                          </g>
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </details>
+                                </li>
+                                <li class="first:pt-0">
+                                  <details
+                                    class="border-l-2 border-white border-opacity-30 pt-4"
+                                  >
+                                    <summary
+                                      class="flex cursor-pointer gap-2 uppercase font-[inconsolata-semiexpanded-bold] text-[10px] list-none pl-2.5 relative before:content-[''] before:w-1.5 before:h-1.5 before:absolute before:top-1 before:-left-1 before:bg-white before:rounded-full before:opacity-50"
+                                    >
+                                      <p>Get report soil texture</p>
+                                      <svg
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 12 12"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g opacity="0.4">
+                                          <path
+                                            d="M2.40039 4.19999L6.00039 7.79999L9.60039 4.19999"
+                                            stroke="white"
+                                            stroke-width="2"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </summary>
+                                    <div class="pl-6 mt-3">
+                                      <p class="">
+                                        1,2,3,4,5,6,7,8,8,9,10,11,12,13,14,15,16,17...
+                                      </p>
+                                      <button class="mt-5 flex gap-1">
+                                        <p>Download data</p>
+                                        <svg
+                                          width="15"
+                                          height="15"
+                                          viewBox="0 0 15 15"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <g opacity="0.5">
+                                            <path
+                                              d="M3 9.75V10.5V12H12V9.75"
+                                              stroke="white"
+                                            />
+                                            <path
+                                              d="M7.5 8.25V1.5"
+                                              stroke="white"
+                                            />
+                                            <path
+                                              d="M4.5 5.25L7.5 8.25L10.5 5.25"
+                                              stroke="white"
+                                            />
+                                          </g>
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </details>
+                                </li>
+                              </ol>
+                            </div>
                           </div>
-                          
-                          
                         </li>
                         <li class="max-w-max">
                           <div class="flex gap-4">
-                            <img src="/src/assets/images/agronomist.png" alt="" class="hidden sm:block w-[55px] h-[55px] mt-[25px]  ">
-                              <div>
-                                  <div class="flex justify-between gap-4 text-xs">
-                                    <div class="flex gap-2">
-                                        <img src="/src/assets/images/agronomist.png" alt="" class=" sm:hidden w-[25px] h-[25px]  ">
-                                      <p class="cs-ai-name opacity-60">Agronomist</p>
-                                    </div>
-                                    <time
-                                      datetime="2024-07-13T12:34:56"
-                                      class="opacity-60"
-                                    >
-                                      12:34</time
-                                    >
-                                  </div>
-                                  <p class="p-2 bg-agmatics-aitext rounded-lg mt-2">
-                                    The soil in the reports is classified as “Silt loam”
-                                    with a composition of 21.2% sand, 69.3% clay. The
-                                    soil type is identified as “Portneuf”
+                            <img
+                              src="/src/assets/images/agronomist.png"
+                              alt=""
+                              class="hidden sm:block w-[55px] h-[55px] mt-[25px]"
+                            />
+                            <div>
+                              <div
+                                class="flex justify-between gap-4 text-xs font-[inconsolata-semiexpanded]"
+                              >
+                                <div class="flex gap-2">
+                                  <img
+                                    src="/src/assets/images/agronomist.png"
+                                    alt=""
+                                    class="sm:hidden w-[25px] h-[25px]"
+                                  />
+                                  <p class="cs-ai-name opacity-60">
+                                    Agronomist
                                   </p>
+                                </div>
+                                <time
+                                  datetime="2024-07-13T12:34:56"
+                                  class="opacity-60"
+                                >
+                                  12:34</time
+                                >
                               </div>
+                              <p class="p-2 bg-agmatics-aitext rounded-lg mt-2">
+                                The soil in the reports is classified as “Silt
+                                loam” with a composition of 21.2% sand, 69.3%
+                                clay. The soil type is identified as “Portneuf”
+                            </p>
+                            </div>
                           </div>
                         </li>
                       </ul>
@@ -181,56 +291,91 @@
                       <ul class="flow">
                         <li class="max-w-max">
                           <div class="flex gap-4">
-                            <img src="/src/assets/images/collector.png" alt="" class="hidden sm:block w-[55px] h-[55px] mt-[25px]  ">
-                              <div>
-                                  <div class="flex justify-between gap-4 text-xs">
-                                    <div class="flex gap-2">
-                                        <img src="/src/assets/images/collector.png" alt="" class=" sm:hidden w-[25px] h-[25px]  ">
-                                      <p class="opacity-60">Collector</p>
-                              
-                                    </div>
-                                    <time
-                                      datetime="2024-07-13T12:34:56"
-                                      class="opacity-60"
-                                    >
-                                      12:34</time
-                                    >
-                                  </div>
-                                  <ol class="mt-5 pl-8 text-[11px] opacity-60 flow-p">
-                                    <li class="">
-                                      <details
-                                        class="border-l-2 border-white border-opacity-30 pt-4 first:pt-0"
-                                      >
-                                        <summary
-                                          class="flex cursor-pointer gap-2 uppercase font-bold text-[10px] list-none pl-2.5 relative before:content-[''] before:w-1.5 before:h-1.5 before:absolute before:top-1 before:-left-1 before:bg-white before:rounded-full before:opacity-50"
-                                        >
-                                          <p>chart schema</p>
-                                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g opacity="0.4">
-                                            <path d="M2.40039 4.19999L6.00039 7.79999L9.60039 4.19999" stroke="white" stroke-width="2"/>
-                                            </g>
-                                            </svg>
-                                        </summary>
-                                        <div class="pl-6 mt-3">
-                                            <p class="">
-                                              This is my super cool chart schema
-                                            </p>
-                                            <button class="mt-5 flex gap-1 ">
-                                                <p>Download data</p>
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g opacity="0.5">
-                                                    <path d="M3 9.75V10.5V12H12V9.75" stroke="white"/>
-                                                    <path d="M7.5 8.25V1.5" stroke="white"/>
-                                                    <path d="M4.5 5.25L7.5 8.25L10.5 5.25" stroke="white"/>
-                                                    </g>
-                                                    </svg>
-                              
-                                            </button>
-                                        </div>
-                                      </details>
-                                    </li>
-                                  </ol>
+                            <img
+                              src="/src/assets/images/collector.png"
+                              alt=""
+                              class="hidden sm:block w-[55px] h-[55px] mt-[25px]"
+                            />
+                            <div>
+                              <div
+                                class="flex justify-between gap-4 text-xs font-[inconsolata-semiexpanded]"
+                              >
+                                <div class="flex gap-2">
+                                  <img
+                                    src="/src/assets/images/collector.png"
+                                    alt=""
+                                    class="sm:hidden w-[25px] h-[25px]"
+                                  />
+                                  <p class="opacity-60">Collector</p>
+                                </div>
+                                <time
+                                  datetime="2024-07-13T12:34:56"
+                                  class="opacity-60"
+                                >
+                                  12:34</time
+                                >
                               </div>
+                              <ol
+                                class="mt-5 pl-8 text-[11px] opacity-60 flow-p"
+                              >
+                                <li class="">
+                                  <details
+                                    class="border-l-2 border-white border-opacity-30 pt-4 first:pt-0"
+                                  >
+                                    <summary
+                                      class="flex cursor-pointer gap-2 uppercase font-[inconsolata-semiexpanded-bold] text-[10px] list-none pl-2.5 relative before:content-[''] before:w-1.5 before:h-1.5 before:absolute before:top-1 before:-left-1 before:bg-white before:rounded-full before:opacity-50"
+                                    >
+                                      <p>chart schema</p>
+                                      <svg
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 12 12"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g opacity="0.4">
+                                          <path
+                                            d="M2.40039 4.19999L6.00039 7.79999L9.60039 4.19999"
+                                            stroke="white"
+                                            stroke-width="2"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </summary>
+                                    <div class="pl-6 mt-3">
+                                      <p class="">
+                                        This is my super cool chart schema
+                                      </p>
+                                      <button class="mt-5 flex gap-1">
+                                        <p>Download data</p>
+                                        <svg
+                                          width="15"
+                                          height="15"
+                                          viewBox="0 0 15 15"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <g opacity="0.5">
+                                            <path
+                                              d="M3 9.75V10.5V12H12V9.75"
+                                              stroke="white"
+                                            />
+                                            <path
+                                              d="M7.5 8.25V1.5"
+                                              stroke="white"
+                                            />
+                                            <path
+                                              d="M4.5 5.25L7.5 8.25L10.5 5.25"
+                                              stroke="white"
+                                            />
+                                          </g>
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </details>
+                                </li>
+                              </ol>
+                            </div>
                           </div>
                         </li>
                       </ul>
@@ -240,7 +385,9 @@
               </div>
             </section>
             <form action="#" class="w-full mt-16">
-              <div class="p-4 bg-agmatics-promptarea rounded-lg flex gap-4">
+              <div
+                class="p-4 bg-agmatics-promptarea rounded-lg flex gap-4 shadow-[0px_4px_2px_0px_rgba(0,0,0,0.25)inset;]"
+              >
                 <div
                   class="cs-grow-wrap overflow-y-auto max-h-[25vh] bg-agmatics-promptarea flex-1"
                 >
@@ -279,11 +426,9 @@
                 </button>
               </div>
             </form>
-            
           </div>
         </div>
       </div>
-      
     </main>
   </body>
 </html>

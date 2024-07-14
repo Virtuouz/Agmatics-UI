@@ -23,28 +23,54 @@
   .cs-w-full-r {
     @apply relative left-1/2 right-1/2 ml-0 mr-[-50vw] w-[50vw];
   }
-  .componentcontainer {
-    @apply relative left-1/2 right-1/2 mx-[-50vw] flex w-screen flex-col items-center justify-center py-20;
-  }
+
   .cs-w-full {
     @apply relative left-1/2 right-1/2 mx-[-50vw] w-screen;
-  }
-  .link {
-    @apply underline decoration-4 underline-offset-4 transition-colors;
   }
 }
 
 /* Globals */
 
 @font-face {
-  font-family: "fira-sansregular";
+  font-family: "firasans-regular";
   src:
-    url("/fonts/firasans-regular-webfont.woff2") format("woff2"),
-    url("/fonts/firasans-regular-webfont.woff") format("woff");
+    url("/dist/fonts/firasans-regular-webfont.woff2") format("woff2"),
+    url("/dist/fonts/firasans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'inconsolata-semiexpanded';
+  src: url('/dist/fonts/InconsolataSemiExpanded-Regular.woff2') format('woff2'),
+      url('/dist/fonts/InconsolataSemiExpanded-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  src: url('/dist/fonts/IBMPlexSans-Regular.woff2') format('woff2'),
+      url('/dist/fonts/IBMPlexSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'inconsolata-semiexpanded-bold';
+  src: url('/dist/fonts/InconsolataSemiExpanded-Bold.woff2') format('woff2'),
+      url('/dist/fonts/InconsolataSemiExpanded-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  font-family: 'ibm-plex-sans';
+}
 /* Debug css */
 /* * {
   outline: 1px solid #f00 !important;
