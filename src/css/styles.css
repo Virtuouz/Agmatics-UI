@@ -64,6 +64,10 @@
     margin-top: 5rem;
   }
 
+  .flow-pt > * + *{
+    padding-top: 1rem;
+  }
+
 /* Utilities */
 .visually-hidden {
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */

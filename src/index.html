@@ -1,85 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="mx-auto my-0 max-w-[1440px] overflow-x-hidden">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agriculture Chat Bot - AgMatics App</title>
-    
+
     <link rel="stylesheet" href="/dist/css/styles.css" />
-</head>
-<body class="mx-4 sm:mx-10 flex flex-col h-screen text-white bg-[radial-gradient(50%_50%_at_50%_50%,#120F0E_0%,#1F1A18_100%);] text-[1.0625rem]">
-
+  </head>
+  <body
+    class="mx-4 sm:mx-10 flex flex-col h-screen text-white bg-[radial-gradient(50%_50%_at_50%_50%,#120F0E_0%,#1F1A18_100%);] text-[1.0625rem]"
+  >
     <main class="flex flex-1 flex-col">
-        <!-- Topo -->
-        <div class="absolute cs-w-full w-full h-full">
-            <div class="absolute bg-[url('/src/assets/images/topo.svg')] bg-cover w-full h-full"></div>
-        </div>
-        
-        <div class="cs-w-full flex-col flex items-center justify-center">
-        
-            <div class="cs-basecontainer flex justify-center items-center w-full h-screen">
-                <div class="max-w-[670px] w-full flex flex-col h-full pb-10">
-                    <section class="flex-1 h-full overflow-y-auto no-scrollbar flex flex-col">
-                        <div class="flex-1 flex flex-col justify-center items-center">
-                            <div class="max-w-full w-full flex flex-col">
-                                <!-- All chat messages go into this ul-->
-                                <ul class=" w-full flex flex-col flow2-5">
+      <!-- Topo -->
+      <div class="absolute cs-w-full w-full h-full">
+        <div
+          class="absolute bg-[url('/src/assets/images/topo.svg')] bg-cover w-full h-full"
+        ></div>
+      </div>
 
-                                    <li class="lg-user-message self-end max-w-[250px]  sm:max-w-[450px]"> <!-- custom class to serve as a hook -->
-                                        <div class="flex justify-between text-xs ">
-                                            <time datetime="2024-07-13T12:34:56" class="opacity-60"> 12:34</time>
-                                            <div>
-                                                <p class="opacity-60">Cody Fisher</p>
-                                            </div>
-                                        </div>
-                                        <p class="p-2 bg-agmatics-usertext rounded-lg mt-2">
-                                            What is the make up of the soil in the reports? What is the make up of the soil in the reports? What is the make up of the soil in the reports? What is the make up of the soil in the reports? What is the make up of the soil in the reports? What is the make up of the soil in the reports? 
-                                        </p>
-                                    </li>
-                                    <li class="max-w-max">
-                                        <ul>
-                                            <li>
-                                                <div class="flex justify-between text-xs ">
-                                                    <div>
-                                                        <p class="opacity-60">Agronomist</p>
-                                                    </div>
-                                                    <time datetime="2024-07-13T12:34:56" class="opacity-60"> 12:34</time>
-                                                </div>
-                                                <p class="p-2 bg-agmatics-aitext rounded-lg mt-2">
-                                                    Harvesting the best information for you...
-                                                </p>
-                                                <ol class="mt-5 pl-8 text-[11px] opacity-60 flow">
-                                                    <li class="">
-                                                        <details>
-                                                            <summary class="font-bold text-[10px] list-none pl-2.5 ">CURRENT SOIL REPORTS</summary>
-                                                            <p class="border-l-white border-l-2 pl-6 mt-3">1,2,3,4,5,6,7,8,8,9,10,11,12,13,14,15,16,17...</p>
-                                                        </details>
-                                                    </li>
-                                                    <li class="">
-                                                        <details>
-                                                            <summary class="font-bold text-[10px] list-none pl-2.5">CURRENT SOIL REPORTS</summary>
-                                                            <p class=" pl-6 mt-3">1,2,3,4,5,6,7,8,8,9,10,11,12,13,14,15,16,17...</p>
-                                                        </details>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                            </div>
+      <div class="cs-w-full flex-col flex items-center justify-center">
+        <div
+          class="cs-basecontainer flex justify-center items-center w-full h-screen"
+        >
+          <div class="max-w-[670px] w-full flex flex-col h-full pb-10">
+            <section
+              class="flex-1 h-full overflow-y-auto no-scrollbar flex flex-col"
+            >
+              <div class="flex-1 flex flex-col justify-center items-center">
+                <div class="max-w-full w-full flex flex-col">
+                  <!-- All chat messages go into this ul-->
+                  <ul class="w-full flex flex-col flow2-5">
+                    <li
+                      class="lg-user-message self-end max-w-[250px] sm:max-w-[450px]"
+                    >
+                      <!-- custom class to serve as a hook -->
+                      <div class="flex justify-between text-xs">
+                        <time datetime="2024-07-13T12:34:56" class="opacity-60">
+                          12:34</time
+                        >
+                        <div>
+                          <p class="opacity-60">Cody Fisher</p>
                         </div>
-                    </section>
-                    <form action="#" class="w-full mt-16">
-                        <div class="p-4 bg-[#363331] rounded-lg">
-                            <div class="cs-grow-wrap overflow-y-auto max-h-[25vh] bg-agmatics-promptarea">
-                                <textarea class="resize-none bg-agmatics-promptarea focus:border-none " name="Prompt Textarea" id="prompt-textarea" rows="1" placeholder="Message AgMatics" onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
+                      </div>
+                      <p class="p-2 bg-agmatics-usertext rounded-lg mt-2">
+                        What is the make up of the soil in the reports? What is
+                        the make up of the soil in the reports? What is the make
+                        up of the soil in the reports? What is the make up of
+                        the soil in the reports? What is the make up of the soil
+                        in the reports? What is the make up of the soil in the
+                        reports?
+                      </p>
+                    </li>
+                    <li class="lg-ai-message max-w-max">
+                      <ul class="flow">
+                        <li>
+                          <div class="flex justify-between gap-4 text-xs">
+                            <div>
+                              <p class="opacity-60">Agronomist</p>
                             </div>
-                        </div>
-                    </form>
+                            <time
+                              datetime="2024-07-13T12:34:56"
+                              class="opacity-60"
+                            >
+                              12:34</time
+                            >
+                          </div>
+                          <p class="p-2 bg-agmatics-aitext rounded-lg mt-2">
+                            Harvesting the best information for you...
+                          </p>
+                          <ol class="mt-5 pl-8 text-[11px] opacity-60">
+                            <li class="">
+                              <details
+                                class="border-l-2 border-white border-opacity-30"
+                              >
+                                <summary
+                                  class="uppercase font-bold text-[10px] list-none pl-2.5 relative before:content-[''] before:w-1.5 before:h-1.5 before:absolute before:top-1 before:-left-1 before:bg-white before:rounded-full before:opacity-50"
+                                >
+                                  Current soil reports
+                                </summary>
+                                <p class="pl-6 mt-3">
+                                  1,2,3,4,5,6,7,8,8,9,10,11,12,13,14,15,16,17...
+                                </p>
+                              </details>
+                            </li>
+                            <li class="first:pt-0">
+                              <details
+                                class="border-l-2 border-white border-opacity-30 pt-4"
+                              >
+                                <summary
+                                  class="uppercase font-bold text-[10px] list-none pl-2.5 relative before:content-[''] before:w-1.5 before:h-1.5 before:absolute before:top-1 before:-left-1 before:bg-white before:rounded-full before:opacity-50"
+                                >
+                                  Get report soil texture
+                                </summary>
+                                <p class="pl-6 mt-3">
+                                  1,2,3,4,5,6,7,8,8,9,10,11,12,13,14,15,16,17...
+                                </p>
+                              </details>
+                            </li>
+                          </ol>
+                        </li>
+                        <li>
+                          <div class="flex justify-between gap-4 text-xs">
+                            <div>
+                              <p class="opacity-60">Agronomist</p>
+                            </div>
+                            <time
+                              datetime="2024-07-13T12:34:56"
+                              class="opacity-60"
+                            >
+                              12:34</time
+                            >
+                          </div>
+                          <p class="p-2 bg-agmatics-aitext rounded-lg mt-2">
+                            The soil in the reports is classified as “Silt loam”
+                            with a composition of 21.2% sand, 69.3% clay. The
+                            soil type is identified as “Portneuf”
+                          </p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="max-w-max">
+                      <ul class="flow">
+                        <li>
+                          <div class="flex justify-between gap-4 text-xs">
+                            <div>
+                              <p class="opacity-60">Collector</p>
+                            </div>
+                            <time
+                              datetime="2024-07-13T12:34:56"
+                              class="opacity-60"
+                            >
+                              12:34</time
+                            >
+                          </div>
+                          <ol class="mt-5 pl-8 text-[11px] opacity-60 flow-p">
+                            <li class="">
+                              <details
+                                class="border-l-2 border-white border-opacity-30 pt-4 first:pt-0"
+                              >
+                                <summary
+                                  class="uppercase font-bold text-[10px] list-none pl-2.5 relative before:content-[''] before:w-1.5 before:h-1.5 before:absolute before:top-1 before:-left-1 before:bg-white before:rounded-full before:opacity-50"
+                                >
+                                  chart schema
+                                </summary>
+                                <p class="pl-6 mt-3">
+                                  This is my super cool chart schema
+                                </p>
+                              </details>
+                            </li>
+                          </ol>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
-            </div>
+              </div>
+            </section>
+            <form action="#" class="w-full mt-16">
+              <div class="p-4 bg-agmatics-promptarea rounded-lg flex">
+                <div
+                  class="cs-grow-wrap overflow-y-auto max-h-[25vh] bg-agmatics-promptarea flex-1"
+                >
+                  <textarea
+                    class="resize-none bg-agmatics-promptarea focus:border-none"
+                    name="Prompt Textarea"
+                    id="prompt-textarea"
+                    rows="1"
+                    placeholder="Message AgMatics"
+                    onInput="this.parentNode.dataset.replicatedValue = this.value"
+                  ></textarea>
+                </div>
+                <button class="self-end">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.6" clip-path="url(#clip0_6_587)">
+                      <path
+                        d="M18.3327 1.66669L9.16602 10.8334M18.3327 1.66669L12.4993 18.3334L9.16602 10.8334M18.3327 1.66669L1.66602 7.50002L9.16602 10.8334"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6_587">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
