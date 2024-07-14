@@ -110,3 +110,10 @@
     grid-area: 1 / 1 / 2 / 2;
   }
 
+  /* .lg-ai-message ul > li .cs-ai-name {
+    border: 2px solid red;
+  }
+
+  .lg-ai-message ul >li .cs-ai-name ~ .cs-ai-name{
+    border: none
+  } */
