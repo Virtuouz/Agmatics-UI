@@ -50,7 +50,19 @@
   outline: 1px solid #f00 !important;
 }  */
 
-
+/* Compositions */
+.flow-half > * + * {
+    margin-top: 8px;
+  }
+  .flow > * + * {
+    margin-top: 16px;
+  }
+  .flow2-5> * + *{
+    margin-top: 3rem;
+  }
+  .flow5 > * + * {
+    margin-top: 5rem;
+  }
 
 /* Utilities */
 .visually-hidden {
